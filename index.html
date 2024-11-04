@@ -734,8 +734,9 @@
                             placeholder="Dienstnummer des TV-Abtransport Beauftragten" maxlength="64">
                     </div>
         
-                    <div id="notepadArea"><textarea id="notepadArea_input" name=""
-                            placeholder="Schreibe deine Notizen hier rein..." id="" rows="3"></textarea></div>
+                    <div id="notepadArea">
+                        <textarea id="notepadArea_input" name="" placeholder="Schreibe deine Notizen hier rein..." id="" rows="3" oninput="JavaScript:startCalculating()"></textarea>
+                    </div>
         
                     <div id="stpo" style="display:none;">
                         <input id="stpo_box" onchange="JavaScript:startCalculating()" type="checkbox" name="">
