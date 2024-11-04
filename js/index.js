@@ -392,39 +392,6 @@ function toggleExtraWanted(event) {
     startCalculating()
 }
 
-setInterval(() => {
-    if (document.getElementById("disclaimer_title_warning").style.color == "rgb(255, 73, 73)") {
-        document.getElementById("disclaimer_title_warning").style.color = "rgb(255, 255, 255)"
-    } else {
-        document.getElementById("disclaimer_title_warning").style.color = "rgb(255, 73, 73)"
-    }
-}, 1000)
-
 async function sleep(ms) {
 	return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-async function disclaimerAccepted() {
-    // Disable Accept Button to prevent stacking of events
-    document.getElementById("disclaimer_button").setAttribute("disabled", "")
-
-    let disclaimerNode = document.getElementById("disclaimer")
-    disclaimerNode.style.boxShadow = "rgba(0, 0, 0, 0.219) 0px 0px 70px 0vw"
-
-    disclaimerNode.style.opacity = 0
-    document.body.removeChild(document.getElementById("disclaimerBackgroundBlocker"))
-
-    await sleep(1000)
-
-    disclaimerNode.style.display = "none"
-}
-
-async function openDisclaimer() {
-    await sleep(500) // Let the page load
-
-    let disclaimerNode = document.getElementById("disclaimer")
-    disclaimerNode.style.opacity = 1
-
-
-    disclaimerNode.style.boxShadow = "rgba(0, 0, 0, 0.219) 0px 0px 70px 30vw"
 }

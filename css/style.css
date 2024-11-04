@@ -107,6 +107,7 @@ body {
 
 
 #results {
+    position: relative;
     background-color: var(--background);
     border-radius: 20px;
     margin: 1vh;
@@ -116,6 +117,20 @@ body {
     overflow-x: hidden;
 
     padding-bottom: 30px;
+}
+
+#disclaimerText {
+    position: absolute;
+    bottom: 10px;
+    /* Abstand vom unteren Rand des Ergebnis-Bereichs */
+    right: 15px;
+    /* Abstand vom rechten Rand des Ergebnis-Bereichs */
+    font-size: 0.8em;
+    /* Kleinere Schriftgröße */
+    color: var(--textprim);
+    /* Optional: Farbe entsprechend des Farbschemas */
+    opacity: 0.7;
+    /* Optional: Leicht transparent für dezente Wirkung */
 }
 
 #fineslist table {
