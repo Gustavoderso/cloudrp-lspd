@@ -229,7 +229,7 @@ function startCalculating() {
     }
 
     if (allBailAllowed) {
-    bailResult.innerHTML = `<b>Kaution möglich:</b> <span style="color: green;">Ja</span> ${bailText}`;
+    bailResult.innerHTML = `<b>Kaution möglich:</b> <span style="color: green;">Ja</span>`;
     } else {
     bailResult.innerHTML = `<b>Kaution möglich:</b> <span style="color: red;">Nein</span>`;
     }
