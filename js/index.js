@@ -202,7 +202,7 @@ function startCalculating() {
         reasonText += ` | TV Abtransport DN ${übergabeDN}, ${übergabeOrganisation.toLocaleUpperCase()}`
     }
 
-    if(notePadInput != ""){
+    if(reasonText !== "" && notePadInput != ""){
         reasonText += ` | ${notePadInput}`
     }
 
