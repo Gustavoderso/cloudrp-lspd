@@ -108,7 +108,6 @@ body {
 
 #results {
     position: relative;
-    display: flex;
     background-color: var(--background);
     border-radius: 20px;
     margin: 1vh;
